@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/T470/AndroidStudioProjects/ProyekNative/app/src/main/res/layout-h600dp/activity_main.xml" value="0.17916666666666667" />
+        <entry key="..\:/Users/T470/AndroidStudioProjects/ProyekNative/app/src/main/res/layout/activity_main.xml" value="0.22" />
+        <entry key="..\:/Users/T470/AndroidStudioProjects/ProyekNative/app/src/main/res/layout/activity_selamat_datang.xml" value="0.18177083333333333" />
+      </map>
+    </option>
+  </component>
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" project-jdk-name="11" project-jdk-type="JavaSDK" />
+</project>

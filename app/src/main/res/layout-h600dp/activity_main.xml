@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".MainActivity">
+
+    <!-- TextView adalah elemen yang berfungsi untuk menampilkan output berupa text -->
+    <!-- android:text="Login To Continue" merupakan informasi mengenai tampilan awal bahwa tampilan tersebut merupakan tempat login-->
+    <!-- android:layout_height="wrap_content" merupakan adalah suatu nilai atribut yang memiliki fungsi sebagai penyesuaian tinggi dan lebar dari suatu tampilan berdasarkan isi/konten yang ada-->
+    <!-- ConstraintLayout merupakan salah satu komponen ViewGroup yang dapat kita gunakan untuk menyusun tampilan aplikasi yang kompleks tanpa adanya nested layout-->
+    <TextView
+        android:id="@+id/textViewLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/textLogin"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.516" />
+
+    <!-- Button atau tombol biasanya memiliki fungsi untuk melakukan perintah tertentu, contohnya yaitu button login yang berfungsi untuk menampilkan halaman isian email dan password -->
+    <!-- android:text="Login" merupakan tombol untuk login setelah mengisi email dan password-->
+    <Button
+        android:id="@+id/buttonLogin"
+        android:layout_width="164dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="48dp"
+        android:text="@string/btnLogin"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/buttonBack"
+        app:layout_constraintHorizontal_bias="0.402"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textPassword"
+        app:layout_constraintVertical_bias="0.095" />
+
+    <!-- Button atau tombol biasanya memiliki fungsi untuk melakukan perintah tertentu, contohnya yaitu button login yang berfungsi untuk menampilkan halaman isian email dan password -->
+    <!-- android:text="BACK" merupakan tombol untuk kembali -->
+
+    <!-- EditText adalah elemen yang berfungsi untuk mengambil inputan dari user-->
+    <!-- android:hint="Email" merupakan tampilan untuk memasukkan email -->
+    <Button
+        android:id="@+id/buttonBack"
+        android:layout_width="164dp"
+        android:layout_height="54dp"
+        android:layout_marginEnd="24dp"
+        android:text="@string/btnBack"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textPassword"
+        app:layout_constraintVertical_bias="0.454" />
+
+    <EditText
+        android:id="@+id/textEmail"
+        android:layout_width="210dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:hint="@string/textEmail"
+        android:inputType="textEmailAddress"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewLogin"
+        android:autofillHints="Email" />
+
+    <!-- EditText adalah elemen yang berfungsi untuk mengambil inputan dari user -->
+    <!-- android:hint="Password" merupakan tempat untuk memasukkan password dari email yang telah masukkan -->
+    <!-- ConstraintLayout merupakan salah satu komponen ViewGroup yang dapat kita gunakan untuk menyusun tampilan aplikasi yang kompleks tanpa adanya nested layout-->
+    <EditText
+        android:id="@+id/textPassword"
+        android:layout_width="212dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="@string/editPassword"
+        android:inputType="textPassword"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textEmail"
+        android:autofillHints="Password" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

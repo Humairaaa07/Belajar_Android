@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Proyek Native</string>
+    <string name="textLogin">Login To Continue</string>
+    <string name="btnLogin">Login</string>
+    <string name="btnBack">BACK</string>
+    <string name="textEmail">Email</string>
+    <string name="editPassword">Password</string>
+    <string name="textSelamat">Selamat Datang</string>
+    <string name="textMyInstagram">My Instagram</string>
+</resources>
